@@ -14,13 +14,10 @@ document.addEventListener('scroll', () => {
     //console.log(`navbarHeight: ${navbarHeight}`);
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
-        navbar.classList.add('.navbar_menu_item.active--dark');
     } else {
         navbar.classList.remove('navbar--dark');
-        navbar.classList.remove('.navbar_menu_item.active--dark');
     }
 });
-
 
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar_menu');
@@ -52,6 +49,15 @@ function mainPage() {
 function newPage1() {
     window.location.href = 'sub1.html';
 }
+
+function newPage2() {
+    window.location.href = 'sub2.html';
+}
+
+function newPage3() {
+    window.location.href = 'sub3.html';
+}
+
 
 //Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home_contact');
