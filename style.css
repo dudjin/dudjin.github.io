@@ -41,7 +41,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    margin: 0;
+    margin: 0px;
     cursor: default;
 }
 
@@ -114,9 +114,9 @@ p {
 
 
 #navbar.navbar--dark {
-    background-color: var(--color-white);
-    color: var(--color-black); 
-    border-bottom: 1px solid var(--color-dark-grey);
+    background-color: white;
+    color: black; 
+    border-bottom: 1px solid grey;
     padding: 8px;
 }
 
@@ -125,13 +125,15 @@ p {
 
 .navbar_menu {
     display: flex;
+    padding-right: 90px;
 }
 
 
 .navbar_logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    width: 300px;
+    width: 380px;
+    padding-left: 80px;
 }
 
 .navbar_menu_item {
@@ -187,17 +189,17 @@ p {
     overflow: hidden;
 }*/
 
+
 #home {
-    height: 100vh;
+    height: 1010px;
     display: flex;
     align-items: center;
     color: #fff;
-    
 }
 
 
 .fullscreen-video-wrap video {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
@@ -206,10 +208,13 @@ p {
     height: 1010px;
     z-index: -1;
     object-fit: cover;
+    overflow: hidden;
 }
 
+
+
 .header-overlay {
-    height: 100vh;
+    height: 1010px;
     width: 50%;
     position:absolute;
     top: 0;
@@ -221,7 +226,7 @@ p {
 
 
 .header-overlay2 {
-    height: 100vh;
+    height: 1010px;
     width: 50%;
     position:absolute;
     top: 0;
@@ -353,7 +358,7 @@ p {
 
 /* About */
 #about {
-    background-color: var(--color-white);
+    background-color: white;
 }
 
 .about_majors {
@@ -361,6 +366,14 @@ p {
     /*justify-content: space-between;*/
     justify-content: space-around;
     margin: 80px 0;
+}
+
+.about_majors2 {
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: left;
+    margin: 80px 0;
+    padding-left: 45px;
 }
 
 
@@ -483,7 +496,7 @@ p {
 
 /* Work */
 #work {
-    background-color: var(--color-yellow);
+    background-color: #fff7d1;
 }
 .category_btn {
     border: 1px solid var(--color-dark-white);
@@ -661,6 +674,37 @@ p {
     transform: scale(1.1);
 }
 
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#616161;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-bottom: 50px;
+}
+
+.footer2 {
+    display: none;
+}
+
+.info {
+    color: #ffffff;
+    padding-left: 80px;
+    font-size: 14px;
+    }
+    
+.footer-content {
+    display: flex;
+}
+
+
+
 /* Scroll */
 .arrow-up {
     position: fixed;
@@ -671,7 +715,7 @@ p {
     font-size: 45px;
     padding-top: 5px;
     color: var(--color-white);
-    background-color: var(--color-grey);
+    background-color: #00c2cb;
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
@@ -684,6 +728,14 @@ p {
 }
 
 /* For below 860px screen width */
+
+@media screen and (max-aspect-ratio: 1219/960) {
+    #video {
+        width: auto;
+        height: 100vh;
+    }
+}
+
 @media screen and (max-width: 960px) {
 
     .container {
@@ -727,19 +779,18 @@ p {
 
     .about_majors {
         flex-direction: column;
+        margin: 0px;
+    }
+
+    .about_majors2 {
+        margin: 0px;
+        flex-direction: column;
+        padding-left: 0px;
     }
 
     .major {
         margin-bottom: 38px;
     }
-/*
-    .video {
-        display: none;
-    }
-    .home_background {
-        display: block;
-    }
-*/
 
     .fullscreen-video-wrap video {
         display: none;
@@ -755,15 +806,19 @@ p {
     .header-overlay2 {
         width: 100%;
     }
+
+    .ft_logo {
+        display: none;
+    }
+    .footer {
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-bottom: 50px;
+    }
+
+    .info {
+        padding-left: 0px;
+        margin: 0;
+    }
 }
 
-
-.footer {
-    text-align: center; 
-    padding: 30px 50px;
-    background-color: var(--color-light-grey);
-} 
-
-
-.footer address {
-    padding-top: 15px;}
