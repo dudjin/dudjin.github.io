@@ -22,8 +22,8 @@
         </a>
 
     <ul class="navbar_menu">
-        <li class="navbar_menu_item active" data-link="#home" onclick='mainPage()'>Home</li>
-        <li class="navbar_menu_item" data-link="#about" onclick='newPage1()'>회사소개</li>
+        <li class="navbar_menu_item" data-link="#home" onclick='mainPage()'>Home</li>
+        <li class="navbar_menu_item active" data-link="#about" onclick='newPage1()'>회사소개</li>
         <li class="navbar_menu_item" data-link="#solution" onclick='newPage2()'>솔루션</li>
         <li class="navbar_menu_item" data-link="#example" onclick='newPage3()'>구축사례</li>
         <li class="navbar_menu_item" data-link="#testimonial">Testimonial</li>
@@ -37,28 +37,75 @@
     </nav>
 
 
-    <section id="home" class="section">  
-        <div class="section_container">        
-        
-    </div> 
-    </section>
+    <section id="home" class="section">
+        <div class="page_banner about">
+            <h2>회사소개</h2>
+            <div class="header-overlay"></div>
 
-
-    <!-- 푸터시작 
-    <div id="copyright" class="footer">
-        <div class="footer_in">
-                <p class="ft_logo">
-                    <a href="/"><img src="imgs/logo3.png" alt="푸터로고"></a>
-                </p>
-                    <p style="cursor: text">
-                        <b>엔지스인포텍(주)</b>
-                        "&nbsp;&nbsp;· 대표 : 유재근 &nbsp;&nbsp;· 사업자번호 : 00000000 &nbsp;&nbsp;· 대표번호 : 051)501-0045"
-                        <br>
-                        "부산광역시 동래구 충렬대로91 301호"
-                    </p>
-                    <p class="copyright">Copyright ⓒ NGISINFOTEK Co. All Rights Reserved.</p>
         </div>
-    </div>-->
+        </section>
+
+        
+                    
+
+    <!-- 탭 메뉴-->
+    <section id="tab_menu">
+        <div class="tab_menu">
+            <input type="radio" id="tab1" name="tabs" checked>
+            <label for="tab1">인사말</label>
+    
+            <input type="radio" id="tab2" name="tabs">
+            <label for="tab2">기업개요</label>
+    
+            <input type="radio" id="tab3" name="tabs">
+            <label for="tab3">회사연혁</label>
+    
+            <input type="radio" id="tab4" name="tabs">
+            <label for="tab4">찾아오시는 길</label>
+    
+    
+            <section id="content1" class="section1">
+                <p>엔지스인포텍(주)는
+                    2010년 창업이후 벤처기업 정신으로 연구개발과 기술혁신을 통해
+                    최고의 ICT 환경을 조성하기 위해 노력하였습니다.
+                    당사는 기업부설연구소, 벤처기업, 기술혁신형 중소기업등 선도기업 인증을 통하여
+                    고객과 파트너사의 Needs와 환경에 적합한 솔류션과 기술력을 제공코자 최선을 다하고 있습니다.
+                    고객중심의 가치관을 엔지스인포텍(주) 임직원 모두가 공유, 솔류션과 인프라,유지관리까지
+                    모든 역량을 제공하여 최고의 파트너로 최선을 다 할 것을 약속드립니다.</p>
+            </section>
+    
+            <section id="content2" class="section1">
+                <p>tab menu2의 내용<br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+            </section>
+    
+            <section id="content3" class="section1">
+                <p>tab menu3의 내용<br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+            </section>
+    
+            <section id="content4" class="section1">
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1620809063804" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1620809063804",
+                            "key" : "25q9u",
+                            "mapWidth" : "640",
+                            "mapHeight" : "360"
+                        }).render();
+                    </script>
+            </section>
+            </div>
+        </section>
+
 
     <footer class="footer">
         <div class="footer-content">
@@ -71,7 +118,7 @@
                 <p class="info">
                     부산광역시 동래구 충렬대로91 301호 <b>엔지스인포텍(주)</b>
                     &nbsp;&nbsp;· 대표 : 유재근 
-                    &nbsp;&nbsp;· 사업자번호 : 00000000 
+                    &nbsp;&nbsp;· 사업자번호 : 607-81-93478 
                     &nbsp;&nbsp;· 대표번호 : 051) 501-0045
                     <br>
                     Copyright &copy; NGISINFOTEK Co. All Rights Reserved.Copyright &copy; NGISINFOTEK Co. All Rights Reserved.
