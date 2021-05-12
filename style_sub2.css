@@ -746,6 +746,11 @@ input:checked + label {
 /* For below 860px screen width */
 @media screen and (max-width: 1100px) {
 
+    .navbar_logo {
+        width: 300px;
+        padding-left: 0px;
+    }
+
     .container {
         padding-right: 3rem;
         padding-left: 3rem;
