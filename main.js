@@ -23,17 +23,16 @@ document.addEventListener('scroll', () => {
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar_menu');
 navbarMenu.addEventListener('click', (event) => {
-    //console.log('dsf');
-    //console.log(event.target);
-    //console.log(event.target.dataset.link);
     const target = event.target;
     const link = target.dataset.link;
     if (link == null) {
         return;
     }
+    
     console.log(event.target.dataset.link);
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior: "smooth"});
+    navbarMenu.classList.remove('open');
 });
 
 function scrollIntoView(selector) {
