@@ -1,19 +1,5 @@
 'use strict';
 
-$(function(){
-    $('#fullpage').fullpage({
-        //options here
-        autoScrolling:true,
-        scrollHorizontally:true,
-        navigation:true,
-        navigationPosition:'right'
-    });
-});
-
-
-
-
-
 const home = document.querySelector('#home');
 const homeContainer = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
