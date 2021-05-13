@@ -608,10 +608,11 @@ p {
     height: 70px;
     padding: 8px;
     border: 2px solid #616161;
+    background-color: white;
 }
 
 #testimonials {
-    background-color: var(--color-white);
+    background-color: var(--color-yellow);
 }
 
 
