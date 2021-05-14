@@ -732,12 +732,12 @@ input:checked + label {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    width: 60px;
+    width: 60px; 
     height: 60px;
     font-size: 45px;
     padding-top: 5px;
     color: var(--color-white);
-    background-color: var(--color-grey);
+    background-color: #00c2cb;
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
@@ -752,6 +752,14 @@ input:checked + label {
 /* For below 860px screen width */
 @media screen and (max-width: 1100px) {
 
+    .navbar_menu {
+        padding-right: 0px;
+    }
+    
+    .navbar_menu {
+        padding-right: 0px;
+    }
+    
     .navbar_logo {
         width: 250px;
         padding-left: 7px;
@@ -822,6 +830,7 @@ input:checked + label {
     }
 
     .info {
+        font-size: 11px;
         padding-left: 0px;
         margin: 0;
     }

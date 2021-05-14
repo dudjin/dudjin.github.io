@@ -1,5 +1,7 @@
 'use strict';
 
+const homeHeight = home.getBoundingClientRect().height;
+
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -48,4 +50,18 @@ navbarMenu.addEventListener('click', (event) => {
 const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
+});
+//Show "arrow up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', ()=> {
+    if(window.scrollY > homeHeight /2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+// Handle click on the "arrow up" button
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#about');
 });
