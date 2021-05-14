@@ -211,7 +211,7 @@ p {
     position:absolute;
     top: 0;
     left: 0;
-    background: var(--color-white);
+    background: var(--color-grey);
     z-index: 1;
     opacity: 0.5;
 }
@@ -223,7 +223,6 @@ p {
     position:absolute;
     top: 0;
     left: 0;
-    
 }
 
 
@@ -262,21 +261,19 @@ p {
 .header-content {
     position: relative;
     z-index: 3;
-    text-align: center;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 300px;
 }
 
-.header-content h1 {
-    font-size: 50px;
-    margin-bottom: 0;
-    color: var(--color-black);
-}
 
-.header-content p {
-    font-size: 1.5rm;
-    display: block;
-    padding-bottom: 2rem;
+.header-content > h1 {
+    font-size: 80px;
+    margin-bottom: 0;
+    margin-left: 100px;
+    color: var(--color-white);
+    text-align: justify;
+    font-family: Nanum Pen Script;
 }
 
 .btn {
@@ -398,9 +395,11 @@ p {
     transition: all 0.8s ease;
 }
 
+/*
 .rmslog:hover {
     box-shadow: 5px 5px 5px 5px #00c2cb;
 }
+*/
 
 .major_title,
 .major_description {

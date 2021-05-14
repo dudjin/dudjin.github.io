@@ -166,6 +166,8 @@ p {
     background-size: cover;
     position: relative;
 }
+
+
 .page_banner h2 {
     background:rgba(51, 53, 56, .9);
     position:absolute;
@@ -179,24 +181,11 @@ p {
     padding: 15px 10px;
     box-shadow: 12px 12px 2px 1px #6E6E6E;
 }
+
 .page_banner.about{
     background-image:url(imgs/sub1_banner.jpg);
 }
-.subpage > h3 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #989898;
-    margin-top: 27px;
-    text-align: center;
-}
-.subpage .content_tt {
-    font-weight: bold;
-    margin-bottom: 27px;
-}
-.fancy-box .gray {
-    background:rgba(51, 53, 56, .9);
-}
+
 
   /* Home */
 
@@ -245,6 +234,7 @@ p {
 }
 
 
+
 /* tab menu */
 
 .tab_menu {
@@ -252,6 +242,7 @@ p {
     max-width: 80%;
     padding-top: 50px;
     margin: 0 auto;
+    text-align: center;
     background: var(--color-white);
 }
 
@@ -279,17 +270,17 @@ label {
 }
 
 label:hover {
-    color: #2e9cdf;
+    color: white;
+    background: #00458b;
     cursor: pointer;
 }
 
 
 /* input 클릭시, lable 스타일 */
 input:checked + label {
-    color: #555;
-    border: 1px solid #ddd;
-    border-top: 2px solid #2e9cdf;
-    border-bottom: 1px solid #ffffff;
+    color: var(--color-yellow);
+    background: #00458b;
+
 }
 
 #tab1:checked ~ #content1,
@@ -326,7 +317,8 @@ input:checked + label {
 }
 
 .history div {
-    position: relative; padding: 0 0 0 48px;
+    position: relative; 
+    padding: 0 0 0 48px;
 }
 
 .history div:before { 
@@ -341,14 +333,22 @@ input:checked + label {
     top:10px; height:calc(100% - 10px);
 }
 
-
-.history ol { 
-    padding: 20px 0 74px;
-    margin: 0; 
+.content_in {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.history li {
-    font-size: 17px; color:#000; line-height: 29px;  
+.bar > p {
+    text-align: left;
+    border-left: 6px solid #00458b;
+}
+
+.map {
+    overflow: hidden; 
+    padding: 7px 11px; 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 0px 0px 2px 2px; 
+    background-color: rgb(249, 249, 249);
 }
 
 
@@ -793,6 +793,11 @@ input:checked + label {
         padding-left: 3rem;
     }
 
+    .content_in {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     .navbar_toggle-btn {
         display: block;
     }
@@ -825,6 +830,12 @@ input:checked + label {
 
     .navbar_menu.open {
         display: block;
+    }
+
+    
+    .map {
+        width: 80%;
+        height: auto;
     }
 
     .about_majors {
