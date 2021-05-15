@@ -4,17 +4,608 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index2.css">
+    <title>엔지스인포텍(주)</title>
+    <meta name="description" content="엔지스인포텍 홈페이지">
+    <meta name="author" content="youngjin">
+    <link rel="icon" type="image/png"  href="imgs/favicon2.png">
+    <script src="https://kit.fontawesome.com/d4d0bd16c2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
 </head>
 <body>
-    <nav id="topMenu" > <ul> <li class="topMenuLi"> <a class="menuLink" href="http://unikys.tistory.com/category/Programming%20Lecture/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%A7%8C%EB%93%A4%EA%B8%B0">LECTURES</a> <ul class="submenu"> <li><a class="submenuLink longLink">속깊은 자바스크립트 강좌</a></li> <li><a class="submenuLink longLink">밑바닥부터 홈페이지 만들기</a></li> <li><a class="submenuLink longLink">안드로이드 앱 개발</a></li> </ul> </li> <li>|</li> <li class="topMenuLi"> <a class="menuLink" href="http://unikys.tistory.com/guestbook">GUEST BOOK</a> </li> <li>|</li> <li class="topMenuLi"> <a class="menuLink" href="http://unikys.tistory.com/tag">TAG CLOUD</a> <ul class="submenu"> <li><a class="submenuLink">자바스크립트</a></li> <li><a class="submenuLink">K100D</a></li> <li><a class="submenuLink">강좌</a></li> </ul> </li> <li>|</li> <li class="topMenuLi"> <a class="menuLink" href="http://unikys.tistory.com/media">MEDIA LOG</a> </li> <li>|</li> <li class="topMenuLi"> <a class="menuLink" href="http://unikys.tistory.com/location">LOCATION LOG</a> </li> </ul> </nav>
+
+    
+    <header id="header">
+        <h1><a href="/index.html"><img src="imgs/main_logo1.png" class="navbar_logo1" alt=""></a></h1>
+        <div id="lib">
+        <nav id="navbar1" > 
+            <ul> 
+                <li class="topMenuLi"> 
+                    <a class="menuLink" href="">Home</a> 
+                    <ul class="submenu"> 
+                    </ul> 
+                </li>
+                <li class="topMenuLi"> 
+                    <a class="menuLink" href="">회사소개</a> 
+                    <ul class="submenu"> 
+                        <li><a class="submenuLink longLink">인사말</a></li> 
+                        <li><a class="submenuLink longLink">기업소개</a></li> 
+                        <li><a class="submenuLink longLink">회사연혁</a></li> 
+                        <li><a class="submenuLink longLink">찾아오시는 길</a></li> 
+                    </ul> 
+                </li>  
+                <li>|</li>
+                <li class="topMenuLi"> 
+                    <a class="menuLink" href="">솔루션</a> 
+                    <ul class="submenu"> 
+                        <li><a class="submenuLink longLink">표준기록관리시스템</a></li> 
+                        <li><a class="submenuLink longLink">백업솔루션</a></li> 
+                        <li><a class="submenuLink longLink">문서중앙화</a></li> 
+                        <li><a class="submenuLink longLink">서고목록관리시스템</a></li> 
+                        <li><a class="submenuLink longLink">비정형기록관리시스템</a></li> 
+                        <li><a class="submenuLink longLink">전자문서이관시스템</a></li> 
+                        <li><a class="submenuLink longLink">서고통합관리 RFID</a></li> 
+                    </ul> 
+                </li>  
+                <li class="topMenuLi"> 
+                    <a class="menuLink" href="">Home</a> 
+                    <ul class="submenu"> 
+                        <li><a class="submenuLink longLink">밑바닥부터 홈페이지 만들기</a></li> 
+                        <li><a class="submenuLink longLink">안드로이드 앱 개발</a></li> 
+                    </ul> 
+                </li>  
+            </ul> 
+        </nav>
+                                <!--
+        <h1><a href="/index.html"><img src="imgs/main_logo1.png" class="navbar_logo1" alt=""></a></h1>
+        <div id="lib">
+        <nav class="navbar1">
+            <ul class="navbar_menu1"> 
+                <li><a href="/index.html" >HOME</a>
+                </li>
+                <li><a href="/sub1.html">회사소개</a>
+                    <ul>
+                        <li><a href="">인사말</a></li>
+                        <li><a href="">기업소새</a></li>
+                        <li><a href="">회사연혁</a></li>
+                        <li><a href="">찾아오는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="/sub2.html">솔루션</a>
+                    <ul>
+                        <li><a href="">표준기록관리시스템</a></li>
+                        <li><a href="">백업솔루션</a></li>
+                        <li><a href="">문서중앙화</a></li>
+                        <li><a href="">서고목록관리시스템</a></li>
+                        <li><a href="">비정형기록관리시스템</a></li>
+                        <li><a href="">전자문서이관시스템</a></li>
+                        <li><a href="">서고통합관리 RFID</a></li>
+                    </ul>
+                </li>
+                <li><a href="">구축사례</a>
+                    <ul>
+                        <li><a href="">인사말</a></li>
+                        <li><a href="">기업소새</a></li>
+                        <li><a href="">회사연혁</a></li>
+                        <li><a href="">찾아오는 길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>-->
+    </lib>
+    </div>
+    </div>
+    </header>
+
+    <!-- Navbar --> 
+    <nav id="navbar">
+        <a href="index.html">
+            <img src="imgs/main_logo1.png" alt="엔지스인포텍" class="navbar_logo">
+        </a>
+    <ul class="navbar_menu">
+        <li class="navbar_menu_item active" data-link="#home" onclick='mainPage()'><a href="">Home</a></li>
+        <li class="navbar_menu_item" data-link="#about" onclick='newPage1()'>회사소개</li>
+        <li class="navbar_menu_item" data-link="#solution" onclick='newPage2()'>솔루션</li>
+        <li class="navbar_menu_item" data-link="#example" onclick='newPage3()'>구축사례</li>
+        <!-- <li class="navbar_menu_item" data-link="#testimonial">Testimonial</li> -->
+        <li class="navbar_menu_item" data-link="#contact">Contact</li>
+    </ul>
+    
+    <!--Toogle Button -->
+    <button class="navbar_toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    </nav>
+
+
+
+    <!-- Home -->
+
+    <section id="home" class="section">
+        <div class="section_container">
+        <div class="fullscreen-video-wrap">
+            <video class="video" src="video/video02.mp4" autoplay="true"
+            loop="true"></video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-overlay2">
+        <div class="header-content">
+            <h3>기록물을<br>
+                제대로 보존하는 것,<br>
+                미래를 위한<br>
+                초석</h3>
+            <a href="#" class="btn">Read More</a>
+            <button class="home_contact">Contact Me</button>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
 
     
 
+    <!--
+    <section id="home" class="section">  
+        <div class="section_container">        
+            <img src="imgs/home-background.png" alt="" class="home_background" > 
+            <h1 class="home_title">Hello, <br /> 엔지스인포텍</h1>
+        <h2 class="home_description">A Software Engineer currently residing in Sydney, Australia.</h2>
+        <button class="home_contact">Contact Me</button>
+        
+        <img 
+            src="imgs/profile.png" 
+            alt="homepage photo" 
+            class="home_avart" 
+        /> 
+        <h1 class="home_title">Hello, <br /> 엔지스인포텍</h1>
+        <h2 class="home_description">A Software Engineer currently residing in Sydney, Australia.</h2>
+        <button class="home_contact">Contact Me</button>
+    </div> 
+    </section>
+    -->
+
+
+    <section id="solution" class="section">
+        <div class="section_container">
+        <h1>솔루션</h1>
+        <h3>Solutions</h3>
+        <div class="solution_majors1">
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/RMS1.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">표준기록관리시스템</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/VIRBAK ABIO.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">백업솔루션</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/doccenter2.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">문서중앙화</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/NGIS-CIMS.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">서고목록관리시스템</h2>
+            </div>
+        </div>
+
+        <div class="solution_majors2">
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/UAC2.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">비정형기록관리시스템</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/MIGRATION.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">전자문서이관시스템</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon2">
+                    <img src="imgs/RFID.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">서고통합관리 RFID</h2>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+<!--
+    <section id="about" class="section">
+        <div class="section_container">
+        <h1>솔루션</h1>
+        <h3>Solutions</h3>
+        <div class="about_majors">
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/RMS1.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">표준기록관리시스템</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/VIRBAK ABIO.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">백업솔루션</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/doccenter2.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">문서중앙화</h2>
+            </div>
+        </div>
+        <div class="about_majors">
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/NGIS-CIMS.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">서고목록관리시스템</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/UAC2.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">비정형기록관리시스템</h2>
+            </div>
+            <div class="major">
+                <div class="major_icon1">
+                    <img src="imgs/MIGRATION.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">전자문서이관시스템</h2>
+            </div>
+        </div>
+        <div class="about_majors2">
+            <div class="major">
+                <div class="major_icon2">
+                    <img src="imgs/RFID.png" alt="homepage photo" class="rmslog"/> 
+                </div>
+                <h2 class="major_title">서고통합관리 RFID</h2>
+            </div>
+        </div>
+    </div>
+    </section>-->
+
+
+    <!-- About -->
+    <!--
+    <section id="about" class="section">
+        <div class="section_container">
+        <h1>Solution</h1>
+        <p> 
+        </p>
+        <div class="about_majors1">
+            <div class="major">
+                <div class="major_icon"> -->
+                    <!-- <i class="fas fa-archive"></i> -->
+                    <!-- <i class="fas fa-file-alt"></i> -->
+        <!--   </div>
+                <h2 class="major_title">RMS</h2>
+                <p class="major_description">
+                    표준기록관리시스템
+                    <br>'공공기록물관리에 관한 법률'에 따라 
+                    구축된 각급기관 기록관리 전용 시스템
+                </p>
+            </div>
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <h2 class="major_title">NGIS-CIMS</h2>
+                <p class="major_description">
+                    서고목록관리시스템
+                    <br>여러 기관(공공기관 및 일반기업)에서
+                    <br>생산되는 여러 유형의 기록물 정보를
+                    <br>통합 관리하는 솔루션
+                </p>
+            </div>
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h2 class="major_title">VIRBAK ABIO</h2>
+                <p class="major_description">
+                    백업솔루션
+                    <br>백업대상서버 증가 시에도 유동적
+                    <br> 대처가 가능한 Architecture
+                </p>
+            </div>
+        </div>
+        <div class="about_majors2">
+            <div class="major">
+                <div class="major_icon">   -->
+                    <!-- <i class="fas fa-archive"></i> -->
+                <!--    <i class="fas fa-file-alt"></i>
+                </div>
+                <h2 class="major_title">RMS</h2>
+                <p class="major_description">
+                    표준기록관리시스템
+                    <br>'공공기록물관리에 관한 법률'에 따라 
+                    <br>구축된 각급기관 기록관리 전용 시스템
+                </p>
+            </div>
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <h2 class="major_title">NGIS-CIMS</h2>
+                <p class="major_description">
+                    서고목록관리시스템
+                    <br>여러 기관(공공기관 및 일반기업)에서
+                    <br>생산되는 여러 유형의 기록물 정보를
+                    <br>통합 관리하는 솔루션
+                </p>
+            </div>
+        </div>-->
+        <!--
+        <div class="about_jobs">
+            <div class="job">
+                <img src="imgs/profilelogo.png" 
+                alt="" 
+                class="job_logo"
+                />
+            <div class="job_description">
+                <p class="job_name">ngisinfotek</p>
+                <p class="job_period">2020~2021</p>
+            </div>
+            </div>
+            <div class="job">
+                <img src="imgs/profilelogo.png" 
+                alt="" 
+                class="job_logo"
+                />
+                <div class="job_description">
+                    <p class="job_name">ngisinfotek</p>
+                    <p class="job_period">2020~2021</p>
+                </div>
+            </div>
+        </div>-->
+    <!-- </div>
+    </section> -->
+
+
+    <!-- Skills -->
+    <!--
+    <section id="solution" class="section">
+        <div class="section_container">
+            <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>Experience with all phases of the software life-cycle. Passion for learning new technologies.
+            Capable of working within a team environment and independently. Ability to plan and time schedule,
+            work under strict time pressure and adapt quickly when needed.
+        </p>
+        <div class="skillset">
+            <div class="skillset_left">
+                <h3 class="skillset_title">Skills</h3>
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>HTML</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill_bar"></div>
+                        <div class="skill_value" style="width: 99%;"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill_bar"></div>
+                        <div class="skill_value" style="width: 90%;"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>JAVASCRIPT</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill_bar"></div>
+                        <div class="skill_value" style="width: 90%;"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>TYPESCRIPT</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill_bar"></div>
+                        <div class="skill_value" style="width: 80%;"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>REACT</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill_bar"></div>
+                        <div class="skill_value" style="width: 88%;"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>python</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill_bar"></div>
+                        <div class="skill_value" style="width: 88%;"></div>
+                </div>
+            </div>
+            
+            <div class="skillset_right">
+                <div class="tools">
+                    <h3 class="skillset_title">Tools</h3>
+                    <ul class="tolls_list">
+                        <li><span>Visual Studio</span></li>
+                        <li><span>Android development tools</span></li>
+                        <li><span>iOS development tools</span></li>
+                        <li><span>Team Foundation</span></li>
+                        <li><span>Sketch app</span></li>
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset_title">Etc</h3>
+                    <ul class="etc_list">
+                        <li><span>Git</span></li>
+                        <li><span>Scrum Master</span></li>
+                        <li><span>Math</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+-->
+
+
+    <!-- Work --> <!--
+        <div class="section_container">
+            <div class="section_container">
+                <h1>구축사례</h1>
+                <h3>Projects</h3>
+                <div class="work_categories">
+                    <button class="category_btn active">
+                        All<span class="category_count">8</span>
+                    </button>
+                    <button class="category_btn">
+                        Front<span class="category_count">8</span>
+                    </button>
+                    <button class="category_btn">
+                        Back-end<span class="category_count">8</span>
+                    </button>
+                    <button class="category_btn">
+                        Mobile<span class="category_count">8</span>
+                    </button>
+                </div>
+    
+                <div class="work_projects">
+                    <a href="" class="project" target=blank>
+                    <img 
+                        src="imgs/profilelogo.png" 
+                        alt=""
+                        class="project_img"
+                    />
+                        <div class="project_description">
+                            <h3>youtube site</h3>
+                            <span>clone coding with HTML and CSS</span>
+                        </div>
+                    </a>
+                    추가-->
+                    <!--
+                    <a href="" class="project" target=blank>
+                        <img 
+                            src="imgs/profilelogo.png" 
+                            alt=""
+                            class="project_img"
+                        />
+                        <div class="project_description">
+                            <h3>youtube site</h3>
+                            <span>clone coding with HTML and CSS</span>
+                        </div>
+                        </a>
+                            
+                </div>
+            </div>
+        </div>
+    </section> -->
 
 
 
+
+
+    <!-- Client -->
+    <section id="client" class="section">
+        <div class="section_container">
+            <h1>고객사</h1>
+        <h3>Client</h3>
+        </div>
+        <div></div>
+        <div class="clients">
+            <div class="client_img">
+                <div class="client_icons">
+                    <img src="imgs/logo_1.gif" alt="homepage photo" class="client_icon"/> 
+                    <img src="imgs/logo_2.jpg" alt="homepage photo" class="client_icon"/> 
+                    <img src="imgs/logo_3.png" alt="homepage photo" class="client_icon"/>
+                    <img src="imgs/logo_4.png" alt="homepage photo" class="client_icon"/> 
+                </div>
+            </div>
+            <div class="client_img">
+                <div class="client_icons">
+                    <img src="imgs/logo_5.jpg" alt="homepage photo" class="client_icon"/> 
+                    <img src="imgs/logo_6.png" alt="homepage photo" class="client_icon"/> 
+                    <img src="imgs/logo_7.png" alt="homepage photo" class="client_icon"/>
+                    <img src="imgs/logo_8.JPG" alt="homepage photo" class="client_icon"/>  
+                </div>
+            </div>
+            <div class="client_img">
+                <div class="client_icons">
+                    <img src="imgs/logo_9.jpg" alt="homepage photo" class="client_icon"/> 
+                    <img src="imgs/logo_10.jpg" alt="homepage photo" class="client_icon"/> 
+                    <img src="imgs/logo_2.jpg" alt="homepage photo" class="client_icon"/>
+                    <img src="imgs/logo_2.jpg" alt="homepage photo" class="client_icon"/> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Contact -->
+    <!--
+    <section id="contact" class="section">
+        <h1 class="contact_title">Let's talk</h1>
+        <h2 class="contact_email">youngjin4459@naver.com</h2>
+        <div class="contact_links">
+            <a href="https://naver.com">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://naver.com">
+                <i class="fa fa-linkedin-square"></i>
+                </a>
+        </div>
+        <p class="contact_rights">2021 Dream Coding Ellie</p>
+    </section>-->
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content1">
+                <p class="ft_logo">
+                <a href="/"><img src="imgs/logo3.png" alt="푸터로고"></a>
+                </p>
+            </div>
+            <div class="footer-content2">
+                <p class="info">
+                    부산광역시 동래구 충렬대로91 301호 <b>엔지스인포텍(주)<br></b>
+                    대표 : 유재근 
+                    &nbsp;&nbsp;사업자번호 : 607-81-93478
+                    &nbsp;&nbsp;대표번호 : 051) 501-0045
+                    <br>
+                    Copyright &copy; NGISINFOTEK Co. All Rights Reserved.
+                    </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Arrow up-->
+    <button class="arrow-up">
+        <i class="fas fa-caret-up"></i>
+    </button> 
 
 
 </body>
