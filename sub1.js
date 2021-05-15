@@ -1,6 +1,6 @@
 'use strict';
 
-const home = document.querySelector('#home');
+const home = document.querySelector('#sub_about');
 const homeHeight = home.getBoundingClientRect().height;
 
 // Make navbar transparent when it is on the top
@@ -50,6 +50,7 @@ const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
 });
+
 //Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', ()=> {
@@ -62,5 +63,5 @@ document.addEventListener('scroll', ()=> {
 
 // Handle click on the "arrow up" button
 arrowUp.addEventListener('click', () => {
-    scrollIntoView('#home');
+    scrollIntoView('#sub2_solution');
 });

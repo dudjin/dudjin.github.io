@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엔지스인포텍(주)</title>
+    <meta name="description" content="엔지스인포텍 홈페이지">
+    <meta name="author" content="youngjin">
+    <link rel="icon" type="image/png"  href="imgs/favicon2.png">
+    <script src="https://kit.fontawesome.com/d4d0bd16c2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+    <ul id="main-menu">
+        <li><a href="">MENU1</a></li>
+        <li><a href="">MENU2</a>
+        <ul id="sub-menu">
+            <li><a href="">submenu</a></li>
+            <li><a href="">submenu</a></li>
+            <li><a href="">submenu</a></li>
+            <li><a href="">submenu</a></li>
+        </ul></li>
+        <li><a href="">MENU3</a></li>
+        <li><a href="">MENU4</a></li>
+    </ul>
+
+</body>
+</html>
+
+
+#sub-menu {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#sub-menu > li {
+    padding: 16px 28px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu > li > a {
+    color: rgba(255,255,255,0.6);
+}

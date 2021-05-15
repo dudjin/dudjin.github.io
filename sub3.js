@@ -1,13 +1,12 @@
 'use strict';
 
+const home = document.querySelector('#sub3_home');
 const homeHeight = home.getBoundingClientRect().height;
 
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-    //console.log(windown.scrollY);
-    //console.log(`navbarHeight: ${navbarHeight}`);
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
     } else {
@@ -51,6 +50,7 @@ const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
 });
+
 //Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', ()=> {
@@ -63,5 +63,5 @@ document.addEventListener('scroll', ()=> {
 
 // Handle click on the "arrow up" button
 arrowUp.addEventListener('click', () => {
-    scrollIntoView('#about');
+    scrollIntoView('#sub3_home');
 });
