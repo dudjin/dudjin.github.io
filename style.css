@@ -173,9 +173,10 @@ header > ul li:last-child a::before {
 
 header #lib {
     position: absolute;
+    display: flex;
     right: 0;
     top: 0;
-    padding-left: 50%;
+    padding-left: 40%;
     padding-right: 0;
     width: 100%;
     box-sizing: border-box;
@@ -269,14 +270,17 @@ header #lib nav > ul ul li {
 }
 
 header #lib nav > ul ul a {
+    display: block;
     font-size: 14px;
     color: #fff;
 }
 
 header #lib nav > ul ul a:hover {
-    color: #2acef1;
+    /* color: #2acef1; */
+    background: #47c5cc;
 }
 
+/*
 header #lib nav > ul ul a:hover::after {
     content: "";
     position: absolute;
@@ -287,6 +291,7 @@ header #lib nav > ul ul a:hover::after {
     background: #2acef1;
     transition: all 0.5s;
 }
+*/
 
 header #lib nav > ul ul a:hover::after {
     left: 0;
@@ -301,14 +306,6 @@ header #lib nav > ul ul a:hover::after {
     color: var(--color-black);
     display: none;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -699,7 +696,7 @@ header #lib nav > ul ul a:hover::after {
 
 /* sub1 - about */
 .sub1_page_banner {
-    height: 350px;
+    height: 365px;
     background-repeat:no-repeat;
     background-position: center top;
     background-size: cover;
@@ -734,7 +731,7 @@ header #lib nav > ul ul a:hover::after {
 }
 
 .sub1_header-overlay {
-    height: 75px;
+    height: 69px;
     width: 100%;
     position:absolute;
     top: 0;
@@ -877,7 +874,7 @@ input:checked + label {
 
 /* sub2 - solution */
 .sub2_page_banner {
-    height: 350px;
+    height: 365px;
     background-repeat:no-repeat;
     background-position: center top;
     background-size: cover;
@@ -905,12 +902,12 @@ input:checked + label {
 }
 
 .sub2_header-overlay {
-    height: 90px;
+    height: 69px;
     width: 100%;
     position:absolute;
     top: 0;
     left: 0;
-    background: var(--color-white);
+    background: var(--color-light-grey);
     z-index: 1;
     opacity: 0.5;
 }
@@ -941,7 +938,7 @@ input:checked + label {
 /* sub3 - 구축사례 */
 
 .sub3_page_banner {
-    height: 350px;
+    height: 365px;
     background-repeat:no-repeat;
     background-position: center top;
     background-size: cover;
@@ -972,7 +969,7 @@ input:checked + label {
 }
 
 .sub3_header-overlay {
-    height: 90px;
+    height: 69px;
     width: 100%;
     position:absolute;
     top: 0;
