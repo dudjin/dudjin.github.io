@@ -20,11 +20,11 @@ function mainPage() {
 }
 
 function newPage1() {
-    window.location.href = 'sub1.html';
+    window.location.href = 'sub1-1.html';
 }
 
 function newPage2() {
-    window.location.href = 'sub2.html';
+    window.location.href = 'sub2-1.html';
 }
 
 function newPage3() {
