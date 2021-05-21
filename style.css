@@ -119,8 +119,7 @@ p {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     width: 380px;
-    padding-left: 80px;
-    
+    padding-left: 80px;  
 }
 
 .navbar1 {
@@ -596,7 +595,7 @@ header #lib nav > ul ul a:hover::after {
 }
 
 
-/* 고객사 더보기 */
+
 .major_icon {
     width: 50px;
     height: 50px;
@@ -671,8 +670,41 @@ header #lib nav > ul ul a:hover::after {
 }
 
 .clients {
-    margin: 32px 0;
+    margin: 10px 0;
 }
+
+.clients2 {
+    display: none;
+    margin: 10px 0;
+}
+
+
+/* 고객사 더보기 */
+.client-plus {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    margin: auto;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.client-plus i {
+    transition: all var(--animation-duration);
+    color: var(--color-blue);
+}
+
+
+
+.client-plus:hover i {
+    transform: scale(1.1);
+    transform: rotate(0.25turn);
+    color: #00458b;
+}
+
 
 
 
@@ -699,6 +731,7 @@ header #lib nav > ul ul a:hover::after {
 .contact_links i:hover {
     transform: scale(1.1);
 }
+
 
 
 /* sub1 - about */
@@ -791,11 +824,40 @@ header #lib nav > ul ul a:hover::after {
     text-align: center;
 }
 
+#sub1_history_img1 {
+    z-index: -1;
+}
+
+
 
 /* sub1-4 */
+#page-wrap {
+    padding-bottom: 100px;
+}
+
 .content_in_map {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    
+}
+
+.sub4_table {
+    width: 100%;
+    max-width: 1049.59px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #444444;
+    padding: 10px;
+}
+
+#table_title {
+    text-align: center;
+    border: 1px solid white;
+    background-color: #00458b;
+    color: white;
 }
 
 
@@ -932,12 +994,23 @@ input:checked + label {
     top:10px; height:calc(100% - 10px);
 }
 
-.content_in {
-    margin-left: 100px;
-    margin-right: 100px;
 
+.content_in {
+    /*margin-left: 100px;
+    margin-right: 100px;*/
     text-align: left;
 }
+
+
+.sub2_content_in {
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
 
 .bar > h2 {
     text-align: left;
@@ -1063,7 +1136,7 @@ input:checked + label {
     width: 100%;
     font-family: "Open Sans";
     padding-top: 50px;
-    padding-left: 90px;
+    padding-left: 120px;
     padding-bottom: 50px;
     z-index: -1;
 }
@@ -1103,6 +1176,68 @@ input:checked + label {
     pointer-events: auto;
 }
 
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+
+    .fullscreen-video-wrap video {
+        position: absolute;
+        height: 1010px;
+        width: auto;
+        z-index: -1;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+
+    .header-overlay {
+        height: 1010px;
+        width: 50%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        background: #616161;
+        z-index: 1;
+        filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f990000, endColorstr=#7f990000)";
+    }
+    
+    .sub1_header-overlay {
+        height: 69px;
+        width: 100%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 1;
+        filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f990000, endColorstr=#7f990000)";
+    }
+
+    .sub2_header-overlay {
+        height: 69px;
+        width: 100%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        background: #7c7979;
+        z-index: 1;
+        filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f990000, endColorstr=#7f990000)";
+    }
+
+    .sub3_header-overlay {
+        height: 69px;
+        width: 100%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 1;
+        filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f990000, endColorstr=#7f990000)";
+    }
+}
+
+
+
 /* For below 860px screen width */
 
 @media screen and (max-aspect-ratio: 1219/960) {
@@ -1114,7 +1249,7 @@ input:checked + label {
 
 @media screen and (max-width: 1100px) {
 
-    .history1 {
+    #sub1_history_img1 {
         width: 100%;
     }
     #page-wrap {
@@ -1133,6 +1268,11 @@ input:checked + label {
         margin: 0px;
         width: 300px;
     }
+
+    .content_in > img {
+        width: 100%;
+    }
+
 
 
     #header {
@@ -1153,7 +1293,7 @@ input:checked + label {
         font-size: 10px;  
     }
 
-    .map {
+    .content_in_map {
         width: 100%;
         height: auto;
     }
