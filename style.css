@@ -510,8 +510,8 @@ header #lib nav > ul ul a:hover::after {
     color: var(--color-white);
     text-align: left;
     font-family: 'Nanum Pen Script', cursive;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .btn {
@@ -763,7 +763,7 @@ header #lib nav > ul ul a:hover::after {
 }
 
 .sub1_page_banner.about > h2{
-    z-index: 6;
+    z-index: 3;
 }
 
 #sub_about {
@@ -957,10 +957,17 @@ input:checked + label {
 
 /* 연혁 */
 .history {
-    padding-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*padding-top: 50px;
+    padding-bottom: 100px;
     text-align: left;
-    
+    width: 100%;*/ 
 }
+
+
 
 #right {
     padding-left: 50%;
@@ -971,24 +978,26 @@ input:checked + label {
     text-align: right;
 }
 
+
 /* 년도 */
 .history >#right h2 {   
     position: relative;
-    font-size: 33px;
+    font-size: 28px;
     color: #365b6d;
     line-height: 1;
     margin: 0;
-    padding-left: 50px;
+    padding-left: 40px;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .history > #left h2 {   
     position: relative;
-    font-size: 33px;
+    font-size: 28px;
     color: #365b6d;
     line-height: 1;
     margin: 0;
-    padding-right: 50px;
+    padding-right: 40px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -1043,15 +1052,16 @@ input:checked + label {
 }
 
 
+
 .content_in {
-    /*margin-left: 100px;
-    margin-right: 100px;*/
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: left;
 }
 
 
 .sub2_content_in {
-    margin: 0;
+    margin: 0px;
     /*margin-left: 100px;
     margin-right: 100px;*/
     text-align: left;
@@ -1072,29 +1082,32 @@ input:checked + label {
 }
 
 .history > #right ol { 
-    padding: 20px 0 74px;
+    padding: 20px 0 30px;
     margin: 0; 
     
 }
 
 .history > #right li {
-    font-size: 17px; 
-    color:#000; 
+    font-size: 18px; 
+    color:#365b6d; 
     line-height: 29px;  
-    padding-left: 50px;
+    padding-left: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
+
 .history > #left ol { 
-    padding: 20px 0 74px;
+    padding: 20px 0 30px;
     margin: 0; 
     
 }
 
 .history > #left li {
-    font-size: 17px; 
-    color:#000; 
+    font-size: 18px; 
+    color:#365b6d; 
     line-height: 29px;  
-    padding-right: 50px;
+    padding-right: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
