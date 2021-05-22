@@ -1467,6 +1467,15 @@ input:checked + label {
         font-size: 10px;
     }
 
+    .history_wrap .item .cont dd {
+        margin-left: 20px;
+    }
+
+    .history_wrap .item:nth-child(even) .cont dd{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
     #sub1_history_img1 {
         width: 100%;
     }
@@ -1624,6 +1633,7 @@ input:checked + label {
         font-size: 11px;
         padding-left: 0px;
         margin: 0;
+        width: 100%;
     }
 }
 
