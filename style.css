@@ -1001,6 +1001,11 @@ input:checked + label {
     float: left;
     padding-left: 0;
     padding-right: 5%;
+    text-align: right;
+}
+
+.history_wrap .item:nth-child(even) .cont dd{
+    margin-right: 40px;
 }
 
 .history_wrap .item .cont strong {
@@ -1046,7 +1051,7 @@ input:checked + label {
 }
 
 .history_wrap .item .cont dt {
-    width: 30%;
+    width: 20%;
     vertical-align: top;
     font-weight: 600;
     color:#365b6d; 
@@ -1054,7 +1059,7 @@ input:checked + label {
 }
 
 .history_wrap .item .cont dd {
-    width: 70%;
+    width: 80%;
     word-break: keep-all;
     color:#365b6d;
     font-family: 'Noto Sans KR', sans-serif;
@@ -1071,6 +1076,7 @@ input:checked + label {
     padding-left: 5%;
     padding-right: 0;
 }
+
 
 .history_wrap .item .image img {
     width: 100%;
