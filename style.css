@@ -955,43 +955,91 @@ input:checked + label {
 }
 
 
+/* 연혁 */
 .history {
     padding-top: 30px;
     text-align: left;
+    
 }
 
+#right {
+    padding-left: 50%;
+}
 
-.history h2 {
+#left {
+    padding-right: 50%;
+    text-align: right;
+}
+
+/* 년도 */
+.history >#right h2 {   
     position: relative;
     font-size: 33px;
-    color: #000;
+    color: #365b6d;
     line-height: 1;
     margin: 0;
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.history h2:before {
-    content:""; position: absolute;
-    left:-48px; top:50%; transform: translateY(-50%);
-    width: 17px; height: 17px; border-radius: 100%;
-    background:#fff; border: 5px solid #ff5a2b;
+.history > #left h2 {   
+    position: relative;
+    font-size: 33px;
+    color: #365b6d;
+    line-height: 1;
+    margin: 0;
+    padding-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* 원 */
+.history > #right h2:before {  
+    content:""; 
+    position: absolute;
+    left:-8px; 
+    top:50%; 
+    transform: translateY(-50%);
+    width: 22px; 
+    height: 22px; 
+    border-radius: 100%;
+    background:#365b6d; 
+    box-sizing: border-box;
+}
+
+.history > #left h2:before {  
+    content:""; 
+    position: absolute;
+    right:-14px; 
+    top:50%; 
+    transform: translateY(-50%);
+    width: 22px; 
+    height: 22px; 
+    border-radius: 100%;
+    background:#365b6d; 
     box-sizing: border-box;
 }
 
 .history div {
     position: relative; 
-    padding: 0 0 0 48px;
+    padding: 0 0 0 0px;
 }
 
+
+/* 세로선 박스 */
 .history div:before { 
     content:""; 
     position:absolute; 
-    left:8px; top:0;
-    width: 2px; height:100%; 
-    background:#ddd;
+    left:50%; 
+    top:0;
+    width: 6px; 
+    height:100%; 
+    background:#62ddd6;    
 }
 
 .history div:first-child:before { 
-    top:10px; height:calc(100% - 10px);
+    top:10px; 
+    height:calc(100% - 10px);
 }
 
 
@@ -1003,11 +1051,9 @@ input:checked + label {
 
 
 .sub2_content_in {
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0;
+    /*margin-left: 100px;
+    margin-right: 100px;*/
     text-align: left;
 }
 
@@ -1025,15 +1071,30 @@ input:checked + label {
     background-color: rgb(249, 249, 249);
 }
 
-.history ol { 
+.history > #right ol { 
     padding: 20px 0 74px;
     margin: 0; 
+    
 }
 
-.history li {
+.history > #right li {
     font-size: 17px; 
     color:#000; 
     line-height: 29px;  
+    padding-left: 50px;
+}
+
+.history > #left ol { 
+    padding: 20px 0 74px;
+    margin: 0; 
+    
+}
+
+.history > #left li {
+    font-size: 17px; 
+    color:#000; 
+    line-height: 29px;  
+    padding-right: 50px;
 }
 
 
