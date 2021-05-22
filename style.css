@@ -379,9 +379,9 @@ header #lib nav > ul ul a:hover::after {
 
 .navbar_toggle-btn {
     position: absolute;
-    top: 25px;
+    top: 16px;
     right: 32px;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--color-black);
     display: none;
 }
@@ -835,7 +835,6 @@ header #lib nav > ul ul a:hover::after {
 .content_in_map {
     padding-top: 50px;
     padding-bottom: 50px;
-    
 }
 
 .sub4_table {
@@ -1458,6 +1457,10 @@ input:checked + label {
 
 @media screen and (max-width: 1100px) {
 
+    .sub1_page_banner.about > h2 {
+        font-size: 20px;
+    }
+
     .history_wrap .item .cont strong {
         font-size: 20px;
     }
@@ -1483,6 +1486,14 @@ input:checked + label {
         margin: auto;
         padding: 0px;
         width: 90%;
+    }
+
+    .content_in {
+        margin: 0;
+    }
+
+    .bar > h2{
+        font-size: 20px;
     }
 
     .content_in > h3 {
@@ -1530,9 +1541,9 @@ input:checked + label {
     }
     
     .navbar_logo {
-        width: 250px;
+        width: 150px;
         padding-left: 7px;
-        padding-top: 5px;
+        padding-top: 10px;
     }
 
     .container {
