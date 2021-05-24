@@ -1542,6 +1542,25 @@ input:checked + label {
 
 @media screen and (max-width: 1100px) {
 
+    .next > h3,
+    .previous > h3 {
+        display: none;
+    }
+    .next,
+    .previous {
+        width: 100px;
+    }
+    #solution_img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    .client_icon2 {
+        display: none;
+    }
+
     .history > #left li,
     .history > #right li {
         font-size: 10px;
@@ -1589,6 +1608,10 @@ input:checked + label {
     }
 
     .bar > h2{
+        font-size: 20px;
+    }
+
+    h2{
         font-size: 20px;
     }
 
@@ -1710,10 +1733,10 @@ input:checked + label {
     }
 
     .rmslog {
-        width: 200px;
+        width: 100px;
     }
     .major_title {
-        font-size: 20px;
+        font-size: 15px;
     }
     .header-overlay2 {
         width: 100%;
