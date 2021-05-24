@@ -1310,7 +1310,20 @@ input:checked + label {
     margin-bottom: 100px;
 }
 
+.content_item_in {
+    display: flex;
+    justify-content: space-around;
+}
+#solution_img2 {
+    margin: 20px;
+}
 
+.sub2-2_table {
+    width: 70%;
+    max-width: 1049.59px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
 
 /* sub2_tab menu */
 
@@ -1410,6 +1423,11 @@ input:checked + label {
     width: 200px;
     font-size: 30px;
     color: gray;
+}
+
+.desc > p {
+    text-align: left;
+    margin: auto;
 }
 
 /* footer */
@@ -1541,6 +1559,16 @@ input:checked + label {
 }
 
 @media screen and (max-width: 1100px) {
+
+    .sub2-2_table {
+        width: 100%;
+    }
+    .content_item_in {
+        display: contents;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
     .next > h3,
     .previous > h3 {
