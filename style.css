@@ -819,6 +819,16 @@ header #lib nav > ul ul a:hover::after {
     font-size: 20px;
 }
 
+
+/* sub1-2 */
+.sub1-2_table {
+    width: 100%;
+    max-width: 1049.59px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+
 /* sub1-3 */
 .content_in_sub1-3 {
     text-align: center;
@@ -835,9 +845,10 @@ header #lib nav > ul ul a:hover::after {
 .content_in_map {
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
 }
 
-.sub4_table {
+.sub1-4_table {
     width: 100%;
     max-width: 1049.59px;
     border: 1px solid #444444;
@@ -985,6 +996,10 @@ input:checked + label {
 .history_wrap .item .image {
     width: 50%;
     box-sizing: border-box;
+}
+
+.history_wrap .item .image {
+    padding: 50px;
 }
 
 .history_wrap .item .cont {
@@ -1213,6 +1228,7 @@ input:checked + label {
     border: 1px solid rgba(0, 0, 0, 0.1); 
     border-radius: 0px 0px 2px 2px; 
     background-color: rgb(249, 249, 249);
+    width: 100%;
 }
 
 .history > #right ol { 
@@ -1456,6 +1472,17 @@ input:checked + label {
 }
 
 @media screen and (max-width: 1100px) {
+
+    .history > #left li,
+    .history > #right li {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .history >#left h2,
+    .history >#right h2 {
+        font-size: 15px;
+    }
 
     .sub1_page_banner.about > h2 {
         font-size: 20px;
