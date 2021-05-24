@@ -656,14 +656,22 @@ header #lib nav > ul ul a:hover::after {
     margin: 0 0;
 }
 
+
 .client_icon {
     margin: 10px;
-    width: 250px;
-    height: 70px;
-    padding: 8px;
-    border: 2px solid #616161;
+    width: 200px;
+    height: 60px;
+    padding: 3px;
+    border: 1px solid #616161;
     background-color: white;
 }
+
+.client_icon2 {
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+}
+
 
 #client {
     background-color: #e6f2f2;
@@ -972,15 +980,18 @@ input:checked + label {
     overflow-y: auto;
 }
 
+
+/* 가운데 세로 선 */
 .history_wrap::before {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
     display: block;
-    width: 1px;
+    width: 6px;
     height: 100%;
-    background: #999;
+    /*background: #999;*/
+    background:#62ddd6;
 }
 
 .history_wrap .item {
@@ -1031,8 +1042,28 @@ input:checked + label {
     font-family: 'Montserrat', sans-serif;
 }
 
-    
+/* 원 */
+.history_wrap .item .cont strong:before {  
+    content:""; 
+    position: absolute;
+    left:-7px;
+    top:28px; 
+    transform: translateY(-50%);
+    width: 22px; 
+    height: 22px; 
+    border-radius: 100%;
+    background:#365b6d; 
+    box-sizing: border-box;
+}
 
+.history_wrap .item:nth-child(even) .cont strong::before { 
+    left:auto;
+    top:28px;
+    right: -14px;
+}
+
+
+/* 년도 가로선 
 .history_wrap .item .cont strong::before {
     content: "";
     position: absolute;
@@ -1047,7 +1078,7 @@ input:checked + label {
 .history_wrap .item:nth-child(even) .cont strong::before {
     left: auto;
     right: 0;
-}
+}*/
 
 .history_wrap .item .cont dl {
     margin-top: 10px;
@@ -1216,10 +1247,20 @@ input:checked + label {
     text-align: left;
 }*/
 
+.sub_title {
+    display: flex;
+}
 
 .bar > h2 {
     text-align: left;
     border-left: 6px solid #00458b;
+}
+
+.bar2 {
+    text-align: left;
+    width: 20px;
+    margin-bottom: 23px;
+    border-bottom: 6px solid #00458b;
 }
 
 .map {
@@ -1259,6 +1300,16 @@ input:checked + label {
     padding-right: 40px;
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+
+
+.sub_title {
+    margin-bottom: 20px;
+}
+.content_item {
+    margin-bottom: 100px;
+}
+
 
 
 /* sub2_tab menu */
@@ -1347,6 +1398,19 @@ input:checked + label {
     display: block;
 }
 
+.previous {
+    float: left;
+    width: 200px;
+    font-size: 30px;
+    color: gray;
+}
+
+.next {
+    float: right;
+    width: 200px;
+    font-size: 30px;
+    color: gray;
+}
 
 /* footer */
 
@@ -1404,6 +1468,11 @@ input:checked + label {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     
+
+    .previous,
+    .next {
+        font-size: 20px;
+    }
 
     .fullscreen-video-wrap video {
         position: absolute;
