@@ -1496,7 +1496,7 @@ input[id="menuicon"] + ul {
     display:block;
     position:fixed;
     right:0;
-    top:50%;
+    top:20%;
     transform:translateY(-50%);
     transition:all .35s;
     text-align:right;
