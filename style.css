@@ -828,7 +828,7 @@ header #lib nav > ul ul a:hover::after {
 }
 
 
-/* sub1-2 */
+/* sub1-2 기업개요 - 기업정보 */
 .sub1-2_table {
     width: 100%;
     max-width: 1049.59px;
@@ -1318,12 +1318,69 @@ input:checked + label {
     margin: 20px;
 }
 
+/* 기업개요 - 인증현황 */
+.sub1-2_table2 {
+    width: 100%;
+    max-width: 1049.59px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+#grey {
+    background-color: #e8e9eb;
+}
+
+.sub1-2_table2 > thead > tr > td {
+    width: 33.33%;
+    text-align: center;
+}
+
 .sub2-2_table {
     width: 70%;
     max-width: 1049.59px;
     border: 1px solid #444444;
     border-collapse: collapse;
 }
+
+/* 기업개요 - 인증현황 (페이지 줄인화면) */
+
+.sub1-2_table3 {
+    width: 100%;
+    max-width: 1049.59px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+.sub1-2_table3 > thead > tr > td {
+    width: 100%;
+    text-align: center;
+}
+
+
+.sub2_table2 {
+    width: 100%;
+    max-width: 1049.59px;
+    border-collapse: collapse;
+    
+}
+
+.small {
+    display: none;
+}
+
+#table2_desc {
+    border: none;
+}
+
+#table2_title {
+    text-align: center;
+    border: none;
+}
+
+#num {
+    width: 25px;
+}
+
 
 /* sub2_tab menu */
 
@@ -1560,6 +1617,17 @@ input:checked + label {
 
 @media screen and (max-width: 1100px) {
 
+    .big {
+        display: none;
+    }
+    .small {
+        display: contents;
+    }
+
+    .sub1-2_table,
+    .sub1-2_table2 {
+        width: 100%;
+    }
     .sub2-2_table {
         width: 100%;
     }
