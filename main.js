@@ -68,11 +68,11 @@ homeContactBtn.addEventListener('click', () => {
 
 
 
-// Navbar toggle button for small screen 
+/* Navbar toggle button for small screen 
 const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
-});
+});*/
 
 
 //Show "arrow up" button when scrolling down
@@ -88,18 +88,4 @@ document.addEventListener('scroll', ()=> {
 // Handle click on the "arrow up" button
 arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
-});
-
-
-var isOpen = false;
-var view = document.querySelector(".client-plus");  // #view 요소를 가져옴
-view.addEventListener("click", function() {
-	if (isOpen == false) {  // 상세 정보가 감춰져 있다면 
-		document.querySelector(".clients2").style.display = "block";  // 상세 정보를 화면에 표시
-		isOpen = true;  // 표시 상태로 지정
-	}
-	else {  // 상세 정보가 표시되어 있다면 
-		document.querySelector(".clients2").style.display = "none";  // 상세 정보를 화면에서 감춤
-		isOpen = false;  // 감춰진 상태로 지정
-	}
 });
