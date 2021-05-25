@@ -67,10 +67,91 @@
         <li class="navbar_menu_item" data-link="#contact">Contact</li>
     </ul>
     
-    <!--Toogle Button -->
+    <!--Toogle Button 
     <button class="navbar_toggle-btn">
         <i class="fas fa-bars"></i>
-    </button>
+    </button> -->
+
+    <!-- 사이드 메뉴 햄버거 버튼 -->
+    <input type="checkbox" id="menuicon">
+        <ul>
+            <li>
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </li>
+        </ul>
+
+
+<!-- 사이드 메뉴 -->
+<div class="sidebar">
+
+    <div class="accordion vertical">
+        <ul>
+            <li>
+                <input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
+                <label for="radio-1" onclick="location.href='/'">HOME</label>
+            </li>
+            <li>
+                <input type="radio" id="radio-2" name="radio-accordion" />
+                <label for="radio-2">회사소개</label>
+                <div class="content">
+                    <dl>
+                        <dd onclick="location.href='/sub1-1.html'">CEO 인사말</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub1-2.html'">기업개요</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub1-3.html'">회사연혁</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub1-4.html'">찾아오시는 길</dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="radio-3" name="radio-accordion" />
+                <label for="radio-3">솔루션</label>
+                <div class="content">
+                    <dl>
+                        <dd onclick="location.href='/sub2-1.html'">표준기록관리시스템</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub2-2.html'">백업솔루션</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub2-3.html'">문서중앙화</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub2-4.html'">서고목록관리시스템</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub2-5.html'">비정형기록관리시스템</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub2-6.html'">전자문서이관시스템</dd>
+                    </dl>
+                    <dl>
+                        <dd onclick="location.href='/sub2-7.html'">서고통합관리 RFID</dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="radio-4" name="radio-accordion" />
+                <label for="radio-4">구축사례</label>
+                <div class="content">
+                    <h3>I was wrong, I'm done</h3>
+    
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    
     </nav>
 
 
