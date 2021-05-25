@@ -1662,8 +1662,7 @@ input[id="menuicon"]:checked + ul + div {
 .vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
     border-bottom:0;
 }
-.vertical ul li label:hover {
-}
+
 .vertical ul li .content {
     color: black;
     height:0px;
@@ -1812,7 +1811,7 @@ input[id="menuicon"]:checked + ul + div {
         display: none;
     }
     .small {
-        display: contents;
+        display: block;
     }
 
     .sub1-2_table,
@@ -1822,6 +1821,7 @@ input[id="menuicon"]:checked + ul + div {
     .sub2-2_table {
         width: 100%;
     }
+
     .content_item_in {
         display: contents;
         margin: 0;
