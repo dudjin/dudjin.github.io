@@ -59,12 +59,12 @@ function newPage3() {
 
 
 
-//Handle click on "contact me" button on home
+/*Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home_contact');
 homeContactBtn.addEventListener('click', () => {
     const scrollTo = document.querySelector('#contact');
     scrollTo.scrollIntoView({behavior: "smooth"});
-});
+});*/
 
 
 
@@ -75,7 +75,7 @@ navbarToggleBtn.addEventListener('click', () => {
 });*/
 
 
-//Show "arrow up" button when scrolling down
+// Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', ()=> {
     if(window.scrollY > homeHeight /2) {

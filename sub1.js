@@ -45,11 +45,11 @@ navbarMenu.addEventListener('click', (event) => {
     navbarMenu.classList.remove('open');
 });
 
-// Navbar toggle button for small screen 
+/* Navbar toggle button for small screen 
 const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
-});
+});*/
 
 //Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector('.arrow-up');
