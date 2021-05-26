@@ -1359,7 +1359,7 @@ input:checked + label {
 
 .sub2_table2 {
     width: 100%;
-    max-width: 1049.59px;
+    /*max-width: 1049.59px;*/
     border-collapse: collapse;
     
 }
@@ -1378,6 +1378,10 @@ input:checked + label {
     color: #042e6f;
 }
 
+#table2_desc2 {
+    border: none;
+    padding: 0;
+}
 
 #table2_title {
     text-align: center;
