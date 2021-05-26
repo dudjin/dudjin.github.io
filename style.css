@@ -1372,6 +1372,13 @@ input:checked + label {
     border: none;
 }
 
+#table2_desc1 {
+    border: none;
+    font-size: 25px;
+    color: #042e6f;
+}
+
+
 #table2_title {
     text-align: center;
     border: none;
@@ -1828,6 +1835,10 @@ input[id="menuicon"]:checked + ul + div {
 }
 
 @media screen and (max-width: 1100px) {
+
+    #table2_desc1 {
+        font-size: 20px;
+    }
 
     .big {
         display: none;
