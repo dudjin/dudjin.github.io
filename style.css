@@ -1913,6 +1913,15 @@ input[id="menuicon"]:checked + ul + div {
 
 @media screen and (max-width: 1100px) {
 
+
+    .history2 li,
+    .history2 p { 
+        font-size: 10px; 
+        color: #000; 
+        line-height: 30px;
+    }
+
+
     #table2_desc1 {
         font-size: 20px;
     }
