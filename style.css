@@ -115,6 +115,7 @@ p {
 
 
 
+
 .navbar_logo1 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
@@ -136,7 +137,6 @@ header h1 {
 }
 
 
-  
 
 header > ul {
     display: flex;
@@ -931,6 +931,7 @@ td {
     padding-top: 50px;
     margin: 0 auto;
     background: var(--color-white);
+    text-align: left;
 }
 
 .section1 {
@@ -971,7 +972,10 @@ input:checked + label {
 }
 
 #tab1:checked ~ #content1,
-#tab2:checked ~ #content2 {
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
     display: block;
 }
 
@@ -1915,7 +1919,7 @@ input[id="menuicon"]:checked + ul + div {
 
 
     .history2 li,
-    .history2 p { 
+    .history2 p{ 
         font-size: 10px; 
         color: #000; 
         line-height: 30px;
