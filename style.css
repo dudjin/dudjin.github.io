@@ -1518,6 +1518,10 @@ input:checked + label {
     display: block;
 }
 
+#dot {
+    font-size: 5px;
+    color: #00458b;
+}
 
 /* sub3 - 구축사례 */
 
