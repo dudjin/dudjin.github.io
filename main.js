@@ -89,3 +89,4 @@ document.addEventListener('scroll', ()=> {
 arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
 });
+

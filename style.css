@@ -814,7 +814,7 @@ header #lib nav > ul ul a:hover::after {
 .content_in {
     margin: auto;
     padding-top: 50px;
-    padding-bottom: 100px;
+
 }
 
 .content_in > h3 {
@@ -877,6 +877,12 @@ td {
 
 
 /* sub2 - solution */
+#page-wrap2 {
+    padding-bottom: 80px;
+    margin: 0px 0px;
+}
+
+
 .sub2_page_banner {
     height: 365px;
     background-repeat:no-repeat;
@@ -1238,6 +1244,74 @@ input:checked + label {
     text-align: left;
 }
 
+
+
+/* 구축사례 */
+.history2 h2 { 
+    position: relative; 
+    font-size: 32px; 
+    color: #000; 
+    line-height: 1; 
+    margin: 0px;
+}
+.history2 h2::before { 
+    content: ""; 
+    position: absolute; 
+    left: -40px; 
+    top: 50%; 
+    width: 17px; 
+    height: 17px; 
+    border-radius: 100%; 
+    background: #fff; 
+    transform: translateY(-50%); 
+    border: 5px solid #ff5a2b;  
+    box-sizing: border-box; 
+}
+.history2 div { 
+    position: relative; 
+    padding: 0 0 0 40px;
+}
+.history2 div::before { 
+    content: ""; 
+    position: absolute; 
+    left: 8px; 
+    top: 0; 
+    height: 100%; 
+    border-left: 2px solid #ddd;
+}
+.history2 div:first-child:before { 
+    top: 10px; 
+    height: clac(100%-10px);
+}
+.history2 ol { 
+    padding: 20px 0 74px; 
+    margin: 0px;
+}
+.history2 li { 
+    font-size: 17px; 
+    color: #000; 
+    line-height: 30px;
+}
+.history2 li > i{ 
+    font-size: 5px; 
+    color: #365b6d; 
+    line-height: 30px;
+}
+.history2 p {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 .sub2_content_in {
     margin: 0;
@@ -1307,7 +1381,7 @@ input:checked + label {
     margin-bottom: 20px;
 }
 .content_item {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .content_item_in {
@@ -1628,8 +1702,6 @@ input[id="menuicon"]:checked + ul + div {
     color: grey;
 }
 
-
-
 .accordion {
     font-family:Arial, Helvetica, sans-serif; 
     margin:0 auto;
@@ -1704,6 +1776,7 @@ input[id="menuicon"]:checked + ul + div {
 .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
     height:300px;
 }
+
 
 
 
